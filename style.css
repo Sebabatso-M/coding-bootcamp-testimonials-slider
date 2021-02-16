@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --darkBlue: hsl(240, 38%, 20%);
+    --grayishBlue: hsl(240, 18%, 77%);
+}
+
+a {
+    color: var(--darkBlue);
+}
+
+body {
+    min-height: 100vh;
+    font-weight: 200;
+    font-size: 1rem;
+    font-family: 'Inter',
+        sans-serif;
+    padding: 0 1.4375rem;
+    padding-top: 1.555rem;
+}
+
+#pattern-curve {
+    display: none;
+}
+
+#container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#illustrations {
+    position: relative;
+    margin-bottom: 3.99rem;
+}
+
+#pattern-bg {
+    width: 324.04px;
+}
+
+#avatar-img {
+    width: 253.317px;
+    border-radius: 5px;
+    position: absolute;
+    top: 29.28px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.81rem 1.02rem;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 1px 0px 8px 1px black;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-45%);
+}
+
+.arrow {
+    cursor: pointer;
+}
+
+#arrow-prev {
+    margin-right: 2.025rem;
+}
+
+#pattern-quotes {
+    width: 60px;
+    position: absolute;
+    bottom: -80.26px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#quote {
+    margin-bottom: 1.71rem;
+}
+
+#person-name {
+    font-weight: 700;
+    color: var(--darkBlue);
+}
+
+#occupation {
+    font-weight: 500;
+    color: var(--grayishBlue);
+}
+
+@media screen and (max-width:365px) {
+    #pattern-bg {
+        width: 97%;
+    }
+
+    #avatar-img {
+        width: 77%;
+    }
+}
+
+/*DESKTOP VIEW*/
+@media screen and (min-width: 968px) {
+    body {
+        padding-right: 4.365rem;
+        padding-left: 9.73rem;
+        padding-top: 2.91rem;
+        position: relative;
+    }
+
+    #container {
+        display: flex;
+        width: calc(100% - calc(4.365rem + 9.73rem));
+        border: 1px solid red;
+        position: absolute;
+        flex-direction: row-reverse;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #quote {
+        font-size: 2rem;
+    }
+
+    span {
+        font-size: 1.2rem;
+    }
+
+    #pattern-curve {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+#illustrations{
+    width: 180%;
+}
+
+    #pattern-bg {
+        width: 100%;
+    }
+}
