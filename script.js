@@ -28,6 +28,10 @@ let index = 0;
 prevBtn.addEventListener('click', previousImage, false);
 nextBtn.addEventListener('click', nextImage, false);
 
+/*window.addEventListener('load', ()=>{
+    setValues(index);
+})*/
+
 document.addEventListener('keydown', (event) => {
     if (event.key == 'ArrowLeft') {
         previousImage();
@@ -44,6 +48,7 @@ function previousImage() {
         index = testimonials.length - 1;
     }
     setValues(index);
+    console.log(index);
 }
 
 function nextImage() {
@@ -53,6 +58,7 @@ function nextImage() {
         index = 0;
     }
     setValues(index);
+    console.log(index);
 }
 
 function setValues(ind) {
