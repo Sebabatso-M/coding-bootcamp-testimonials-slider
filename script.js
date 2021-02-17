@@ -28,9 +28,9 @@ let index = 0;
 prevBtn.addEventListener('click', previousImage, false);
 nextBtn.addEventListener('click', nextImage, false);
 
-/*window.addEventListener('load', ()=>{
+window.addEventListener('load', ()=>{
     setValues(index);
-})*/
+});
 
 document.addEventListener('keydown', (event) => {
     if (event.key == 'ArrowLeft') {
