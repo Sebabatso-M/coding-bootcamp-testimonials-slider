@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
 
 * {
     margin: 0;
@@ -21,8 +21,10 @@ body {
     font-size: 1rem;
     font-family: 'Inter',
         sans-serif;
+    font-weight: 300;
     padding: 0 1.4375rem;
     padding-top: 1.555rem;
+    position: relative;
 }
 
 #pattern-curve {
@@ -81,6 +83,10 @@ body {
     transform: translateX(-50%);
 }
 
+#main-content span {
+    display: block;
+}
+
 #quote {
     margin-bottom: 1.71rem;
 }
@@ -117,13 +123,18 @@ body {
     #container {
         display: flex;
         width: calc(100% - calc(4.365rem + 9.73rem));
-        border: 1px solid red;
+        height: 633px;
         position: absolute;
         flex-direction: row-reverse;
         align-items: center;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-46.2%, -45.55%);
+        text-align: left;
+    }
+
+    #main-content span {
+        display: inline-block;
     }
 
     #quote {
@@ -142,11 +153,37 @@ body {
         z-index: -1;
     }
 
-#illustrations{
-    width: 180%;
-}
+    #illustrations {
+        height: 100%;
+        margin: 0;
+    }
 
     #pattern-bg {
-        width: 100%;
+        width: 95%;
+    }
+
+    #avatar-img {
+        width: 72.3203%;
+        top: 60px;
+    }
+
+    #main-content {
+        width: 600.68px;
+        position: absolute;
+        left: 0;
+    }
+
+    #navigation {
+        top: 85.5%;
+        left: 25%;
+        transform: translate(-25%);
+        padding: 1.08rem 1.32rem;
+    }
+
+    #pattern-quotes {
+        width: unset;
+        top: 135px;
+        bottom: unset;
+        left: -260px;
     }
 }
